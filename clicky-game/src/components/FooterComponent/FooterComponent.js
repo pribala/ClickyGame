@@ -2,7 +2,7 @@ import React from "react";
 import "./FooterComponent.css";
 
 const FooterComponent = props => (
-<footer className="fixed-bottom">
+<footer className="mt-5">
 	<div className="container">
 		<p className="text-center">{props.children}</p>
 	</div>

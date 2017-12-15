@@ -16,8 +16,6 @@ class App extends Component {
 
   incrScore = id => {
     console.log(id);
-    const incr = this.score + 1;
-    this.setState({ incr});
   }
 
   render() {
@@ -28,9 +26,11 @@ class App extends Component {
         score={ this.state.score } topScore={ this.state.topScore }>
       </HeaderComponent>
       <JumbotronComponent></JumbotronComponent>
-      <div className="container">
+      
+      <div className="container row mx-auto">
        
       {this.state.characters.map(character => (
+          <div className="col" key={character.id}>
           <PictureCardComponent
             key={character.id}
             dataid={character.id}
@@ -38,6 +38,7 @@ class App extends Component {
             image={character.image}
             incrScore= { this.incrScore }
           />
+          </div>
         ))}
          
       </div>  
