@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Bart Simpson",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/d/df/Bart-gangster-psd4202.png/revision/latest?cb=20100720001226"
+  },
+  {
+    "id": 2,
+    "name": "Homer Simpson",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/b/b4/Homer_drool.jpg/revision/latest?cb=20100923210150"
+  },
+  {
+    "id": 3,
+    "name": "Montgomery Burns",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/a/a7/Montgomery_Burns.png/revision/latest?cb=20100602062705"
+  },
+  {
+    "id": 4,
+    "name": "Ralph",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/d/dc/Ralph.png/revision/latest?cb=20140831045503"
+  },
+  {
+    "id": 5,
+    "name": "Bodyguards",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/d/df/Bodyguards.jpg/revision/latest?cb=20171210193026"
+  },
+  {
+    "id": 6,
+    "name": "Krusty",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/e/e5/Krusty_The_Clown.png/revision/latest?cb=20131004191501"
+  },
+  {
+    "id": 7,
+    "name": "Don Brodka",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/6/61/Don_brodka.jpg/revision/latest?cb=20100425090913"
+  },
+  {
+    "id": 8,
+    "name": "Maggie",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/8/89/Maggie.png/revision/latest?cb=20090115172358"
+  },
+  {
+    "id": 9,
+    "name": "Moe Szyslak",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/8/80/Moe_Szyslak.png/revision/latest?cb=20170101190543"
+  },
+  {
+    "id": 10,
+    "name": "Eliza_Simpson",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/3/3c/Eliza_Simpson-0.png/revision/latest?cb=20171214202234"
+  },
+  {
+    "id": 11,
+    "name": "The Simpsons",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/0/07/Defender.jpg/revision/latest?cb=20100921190043"
+  },
+  {
+    "id": 12,
+    "name": "Marge",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/e/ea/Marge%2C_Maggie%2C_Lisa_%26_Bart.png/revision/latest?cb=20100827130728"
+  }
+]

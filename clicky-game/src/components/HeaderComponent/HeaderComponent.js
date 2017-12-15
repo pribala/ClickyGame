@@ -12,7 +12,7 @@ const HeaderComponent = props => (
         <h3>{ props.heading }</h3>
       </div>
       <div className="col">
-        <h3 className="float-right">{ props.subHeading}  </h3>
+        <h3 className="float-right">Score { props.score} | Top Score { props.topScore }  </h3>
       </div>  
     </div> 
     </div> 
