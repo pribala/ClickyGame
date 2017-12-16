@@ -58,5 +58,20 @@
     "id": 12,
     "name": "Marge",
     "image": "https://vignette.wikia.nocookie.net/simpsons/images/e/ea/Marge%2C_Maggie%2C_Lisa_%26_Bart.png/revision/latest?cb=20100827130728"
+  },
+  {
+    "id": 13,
+    "name": "Flanders Family",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/2/26/Flanders_family.gif/revision/latest?cb=20100619195513"
+  },
+  {
+    "id": 14,
+    "name": "Krusty",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/4/4d/Krustjuggle.jpg/revision/latest?cb=20070609215248"
+  },
+  {
+    "id": 15,
+    "name": "Lisa",
+    "image": "https://vignette.wikia.nocookie.net/simpsons/images/5/5a/Lisa2.png/revision/latest?cb=20140110020312"
   }
 ]
