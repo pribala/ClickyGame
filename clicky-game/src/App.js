@@ -13,7 +13,8 @@ class App extends Component {
     score :0,
     topScore : 0,
     character_id: -1,
-    heading: "Click an image to start game!"
+    heading: "Click an image to start game!",
+    isHovered:""
   };
    
  // handleIncrement increases this.state.clickCount by 1
@@ -24,6 +25,7 @@ class App extends Component {
       this.setState({character_id: id});
       this.setState({score: this.state.score +1 });
       this.setState({heading: "You guessed correctly!"});
+      this.shuffle(this.state.characters);
     }else {
       if(this.state.score > this.state.topScore) {
       this.setState({topScore: this.state.score });
@@ -35,7 +37,34 @@ class App extends Component {
     }
   };
 
+  handleHover(){
+    this.setState({
+        isHovered: !this.state.isHovered
+    });
+  }
+
+  shuffle(array) {
+    let counter = array.length;
+
+    // While there are elements in the array
+    while (counter > 0) {
+        // Pick a random index
+        let index = Math.floor(Math.random() * counter);
+
+        // Decrease counter by 1
+        counter--;
+
+        // And swap the last element with it
+        let temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+    }
+
+    return array;
+}
+
   render() {
+    const btnClass = this.state.isHovered ? "pulse animated" : "";
     return (
      <div>
       
@@ -48,7 +77,7 @@ class App extends Component {
       <div className="container row mx-auto">
        
       {this.state.characters.map(character => (
-          <div className="col" key={character.id}>
+          <div className="col"  className={btnClass} onMouseEnter={this.handleHover.bind(this)} onMouseLeave={this.handleHover.bind(this)} key={character.id}>
           <PictureCardComponent
             key={character.id}
             dataid={character.id}
@@ -69,3 +98,4 @@ class App extends Component {
 
 export default App;
 
+// characters.reduce((a,v)=>a.splice(Math.floor(Math.random() * a.length), 0, v) && a, [])
