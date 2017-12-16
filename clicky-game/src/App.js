@@ -9,21 +9,39 @@ import characters from './characters.json';
 class App extends Component {
   state = {
     characters: characters,
-    //searchTerm: ''
-    score: 0,
-    topScore: 0
+    clickCount: 0,
+    score :0,
+    topScore : 0,
+    character_id: -1,
+    heading: "Click an image to start game!"
   };
-
-  incrScore = id => {
-    console.log(id);
-  }
+   
+ // handleIncrement increases this.state.clickCount by 1
+  handleIncrement = (id) => {
+    if(id !== this.state.character_id){
+    // We always use the setState method to update a component's state
+      this.setState({ clickCount: this.state.clickCount + 1 });
+      this.setState({character_id: id});
+      this.setState({score: this.state.score +1 });
+      this.setState({heading: "You guessed correctly!"});
+    }else {
+      if(this.state.score > this.state.topScore) {
+      this.setState({topScore: this.state.score });
+      }
+      this.setState({ clickCount: 0 });
+      this.setState({character_id: -1});
+      this.setState({score: 0 });
+      this.setState({heading: "Click an image to start game!"});
+    }
+  };
 
   render() {
     return (
      <div>
       
-      <HeaderComponent brandname="Clicky Game" heading = "Click an image to start game!"
+      <HeaderComponent brandname="Clicky Game" heading = { this.state.heading }
         score={ this.state.score } topScore={ this.state.topScore }>
+      }
       </HeaderComponent>
       <JumbotronComponent></JumbotronComponent>
       
@@ -36,7 +54,7 @@ class App extends Component {
             dataid={character.id}
             name={character.name}
             image={character.image}
-            incrScore= { this.incrScore }
+            handleIncrement = { this.handleIncrement }
           />
           </div>
         ))}
